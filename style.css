@@ -1,0 +1,198 @@
+/* 
+    Document   : style.css
+    Created on : 22.08.2013, 13:19:08
+    Author     : Valentin
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+
+.link{
+    cursor:pointer
+}
+
+.link:hover{
+    color:#888;
+}
+
+.NonVis { 
+    display: none;
+}
+
+#Dialog {
+    z-index: 9999;
+    display: block;
+}
+
+#DialogBackground{
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.5;
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+#DialogFront{
+    width: 200px;
+    height: 100px;
+    margin-left: -100px;
+    margin-top: -50px;
+    background: #fff;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    padding-top: 20px;
+    box-shadow: 0 0 8px 2px #003;
+}
+
+.loadingText{
+    margin-top: 10px;
+}
+
+h1{
+    font-size: 19px;
+    color: #333;
+}
+
+h2{
+    font-size: 17px;
+    color: #333;
+}
+
+table{
+    border: 1px solid #aaa;
+}
+
+table tr td{
+    border: 1px solid #aaa;
+    background: linear-gradient(180deg,#fff, #eee);
+}
+
+table tr th{
+    border: 1px solid #aaa;
+    background: linear-gradient(180deg,#ccc, #bbb);
+}
+
+#newGroup, #inputArea, #listArea, #sumArea, #print{
+    margin-bottom: 10px;
+}
+
+input {
+    margin-right: 2px;
+}
+
+.right{
+    text-align: right;
+}
+
+.onlyPrint{
+    display: none;
+}
+
+#dialog-overlay {  
+  
+    /* set it to fill the whil screen */  
+    width:100%;   
+    height:100%;  
+      
+    /* transparency for different browsers */  
+    filter:alpha(opacity=50);   
+    -moz-opacity:0.5;   
+    -khtml-opacity: 0.5;   
+    opacity: 0.5;   
+    background:#000;   
+  
+    /* make sure it appear behind the dialog box but above everything else */  
+    position:absolute;   
+    top:0; left:0;   
+    z-index:3000;   
+  
+    /* hide it by default */  
+    display:none;  
+}  
+  
+  
+#dialog-box {  
+      
+    /* css3 drop shadow */  
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);  
+      
+    /* css3 border radius */  
+    border-radius: 5px;  
+      
+    background:#eee;  
+    /* styling of the dialog box, i have a fixed dimension for this demo */   
+    width:600px;   
+      
+    /* make sure it has the highest z-index */  
+    position:fixed;   
+    z-index:5000;   
+  
+    /* hide it by default */  
+    display:none;  
+}  
+  
+#dialog-box .dialog-content {  
+    /* style the content */  
+    padding:10px;   
+    margin:13px;   
+    text-align: center;
+}  
+  
+a.buttonDia {  
+    /* styles for button */
+    border: 1px solid #AAA;
+    border-radius: 5px;
+    margin:10px auto 0 auto;  
+    text-align:center;  
+    display: block;  
+    width:100px;  
+    padding: 5px 10px 6px;  
+    color: #fff;  
+    text-decoration: none;  
+    font-weight: bold;  
+    line-height: 1;  
+      
+    /* button color */  
+    background-color: #e33100;  
+      
+      
+    /* drop shadow */  
+    box-shadow: 0 1px 3px rgba(0,0,0,0.5);  
+      
+    /* text shaow */  
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.25);  
+    border-bottom: 1px solid rgba(0,0,0,0.25);  
+    position: relative;  
+    cursor: pointer;  
+      
+}  
+  
+a.buttonDia:hover {  
+    background-color: #c33100;    
+}  
+  
+/* extra styling */  
+#dialog-box .dialog-content p {  
+    font-weight:700; margin:0;  
+}  
+  
+#dialog-box .dialog-content ul {  
+    margin:10px 0 10px 20px;   
+    padding:0;   
+    height:50px;  
+} 
+
+#dialog-message{
+    border-bottom: 1px solid #AAA;
+    padding-bottom: 7px;
+}

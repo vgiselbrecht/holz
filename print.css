@@ -1,0 +1,15 @@
+/* 
+    Document   : print
+    Created on : 23.08.2013, 10:30:07
+    Author     : Valentin
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+#inputArea,#back,.noPrint { 
+    display: none;
+}
+
+.onlyPrint{
+    display: block;
+}
